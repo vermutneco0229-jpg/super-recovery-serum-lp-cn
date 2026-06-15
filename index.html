@@ -107,6 +107,30 @@
     .usage-section img { width: 100%; display: block; }
 
     /* ===== 肌の変化 ===== */
+    /* ===== 涂抹式营养品 ===== */
+    .supl-section { background: var(--off-white); text-align: center; padding: 40px 24px 50px; }
+    .supl-card { max-width: 380px; margin: 0 auto; background: linear-gradient(160deg, #2D1B3D 0%, #1A1228 100%); border-radius: 22px; padding: 34px 26px; box-shadow: 0 12px 44px rgba(90,60,140,0.28); }
+    .supl-label { display: inline-block; font-family: 'Noto Serif SC', serif; font-size: 19px; font-weight: 700; letter-spacing: 0.06em; background: linear-gradient(120deg, var(--light-lavender), var(--soft-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 22px; }
+    .supl-list { list-style: none; text-align: left; display: inline-block; margin: 0; padding: 0; }
+    .supl-list li { position: relative; padding-left: 22px; color: #F0EAFA; font-size: 14.5px; line-height: 1.75; margin-bottom: 15px; font-weight: 300; letter-spacing: 0.02em; }
+    .supl-list li:last-child { margin-bottom: 0; }
+    .supl-list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--aurora-purple), var(--aurora-pink)); }
+    .supl-list li strong { color: #fff; font-weight: 600; }
+
+    /* ===== 烦恼结论 ===== */
+    .concern-conclusion { margin-top: 36px; }
+    .concern-arrow { font-size: 20px; color: var(--aurora-pink); line-height: 1; margin-bottom: 14px; }
+    .concern-q { font-family: 'Noto Serif SC', serif; font-size: 17px; font-weight: 700; color: var(--text-dark); line-height: 1.8; letter-spacing: 0.02em; }
+    .concern-q strong { background: linear-gradient(120deg, var(--aurora-purple), var(--aurora-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* ===== 四重覆盖 ===== */
+    .cover-section { background: linear-gradient(160deg, #1A1228 0%, #2D1B3D 50%, #1A1228 100%); color: white; text-align: center; padding: 54px 24px; }
+    .cover-lead { font-size: 14px; color: var(--light-lavender); letter-spacing: 0.08em; margin-bottom: 26px; }
+    .cover-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 320px; margin: 0 auto 30px; }
+    .cover-item { flex: 0 0 calc(50% - 6px); padding: 18px 8px; border-radius: 14px; background: rgba(200,184,232,0.1); border: 1px solid rgba(200,184,232,0.3); font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 600; color: #fff; letter-spacing: 0.04em; }
+    .cover-conclusion { font-family: 'Noto Serif SC', serif; font-size: 19px; font-weight: 700; line-height: 1.7; color: #fff; }
+    .cover-conclusion strong { font-size: 27px; background: linear-gradient(120deg, var(--light-lavender), var(--soft-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
     .effect-section { background: var(--white); text-align: center; }
     .effect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
     .effect-card { background: linear-gradient(135deg, rgba(155,125,192,0.07), rgba(216,120,176,0.07)); border: 1px solid var(--border-light); border-radius: 16px; padding: 22px 14px; text-align: center; }
@@ -205,16 +229,52 @@
 
 <div class="a-line"></div>
 
+<!-- 涂抹式营养品 -->
+<section class="supl-section fade-in">
+  <div class="supl-card">
+    <p class="supl-label">宛如涂抹式营养品</p>
+    <ul class="supl-list">
+      <li>从肌肤免疫出发的<strong>全新理念精华</strong></li>
+      <li>聚焦衰老元凶<strong>僵尸细胞</strong></li>
+      <li>培育肌肤<strong>自我焕美的能力</strong></li>
+    </ul>
+  </div>
+</section>
+
+<div class="a-line"></div>
+
 <!-- お悩み -->
 <section class="concern-section fade-in">
   <p class="eyebrow">For Your Skin</p>
   <h2 class="sec-title">你是否有<br>这些肌肤烦恼？</h2>
   <div class="concern-list">
-    <div class="concern-item"><div class="concern-check"></div><span>调整饮食与作息，痘痘依然不见好</span></div>
-    <div class="concern-item"><div class="concern-check"></div><span>原因不明的肌肤粗糙·炎症持续不断</span></div>
-    <div class="concern-item"><div class="concern-check"></div><span>普拉斯玛尼亚护理后一周的集中护理</span></div>
-    <div class="concern-item"><div class="concern-check"></div><span>因疲劳·感冒·压力等<br>导致免疫力下降</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>明明注意饮食，肌肤粗糙·痘痘却始终不见好</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>坚持养肠道·吃营养品，却感觉不到变化</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>最近突然开始在意细纹·松弛·暗沉</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>曾被说看起来比实际年龄更显老</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>肌肤的修复速度比以前变慢了</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>换了护肤品也感受不到效果</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>睡再多也消除不了疲惫，肌肤也没有活力</span></div>
+    <div class="concern-item"><div class="concern-check"></div><span>已经开始觉得"上了年纪也没办法"而想放弃</span></div>
   </div>
+  <div class="concern-conclusion">
+    <div class="concern-arrow">▼</div>
+    <p class="concern-q">这或许是<strong>肌肤免疫细胞</strong>与<strong>肌肤菌群平衡</strong>失调⁈</p>
+  </div>
+</section>
+
+<div class="a-line"></div>
+
+<!-- 四重覆盖 -->
+<section class="cover-section fade-in">
+  <p class="cover-lead">超级修护精华</p>
+  <div class="cover-grid">
+    <div class="cover-item">肌肤免疫</div>
+    <div class="cover-item">菌群平衡</div>
+    <div class="cover-item">肌肤屏障</div>
+    <div class="cover-item">再生</div>
+  </div>
+  <p class="cover-conclusion">全面覆盖<strong>四大</strong>领域的<br>全新理念精华</p>
 </section>
 
 <div class="a-line"></div>
